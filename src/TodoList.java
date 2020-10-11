@@ -1,27 +1,33 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.text.DateFormat;
+import java.util.*;
+
 public class TodoList {
-    private ArrayList<String> lists;
+    private ArrayList<Task> tasks;
     private ArrayList<String> listDone;
 
     public TodoList(){
-        this.lists = new ArrayList<>();
+        this.tasks = new ArrayList<>();
         this.listDone = new ArrayList<>();
     }
 
-    public void add(String task){
-        lists.add(task);
+    public void addRecord(String taskTitle, String projectName, Date taskDate, String taskStatus){
+
+        tasks.add(new Task(taskTitle,projectName, taskDate, taskStatus));
     }
 
     public void print(){
-        int i=1;
-        for (String list: lists){
-            System.out.println(i+": " + list);
-            i++;
+        for (Task list: tasks){
+            System.out.println(list.getTaskTitle());
+            System.out.println(list.getProjectName());
+            System.out.println(list.getTaskDate());
+            System.out.println(list.getStatus());
+
         }
     }
 
-    public void remove(int number){
+    /*public void remove(int number){
         listDone.add(lists.get(number-1));
         lists.remove(number-1);
 
@@ -33,5 +39,5 @@ public class TodoList {
 
     public int listDoneSize(){
         return listDone.size();
-    }
+    }*/
 }
