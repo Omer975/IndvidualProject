@@ -5,11 +5,11 @@ import java.util.*;
 
 public class TodoList {
     private ArrayList<Task> tasks;
-    private ArrayList<String> listDone;
+    private ArrayList<Task> tasksDone;
 
     public TodoList(){
         this.tasks = new ArrayList<>();
-        this.listDone = new ArrayList<>();
+        this.tasksDone = new ArrayList<>();
     }
 
     public void addRecord(String taskTitle, String projectName, Date taskDate, String taskStatus){
@@ -19,25 +19,29 @@ public class TodoList {
 
     public void print(){
         for (Task list: tasks){
-            System.out.println(list.getTaskTitle());
-            System.out.println(list.getProjectName());
-            System.out.println(list.getTaskDate());
-            System.out.println(list.getStatus());
+            System.out.println("__________________________________________");
+            System.out.println("Task Title:     " + list.getTaskTitle());
+            System.out.println("Project Name:   " + list.getProjectName());
+            System.out.println("Task Date:      " + list.getTaskDate());
+            System.out.println("Task Status:    " + list.getStatus());
+            System.out.println("__________________________________________");
 
         }
     }
 
-    /*public void remove(int number){
-        listDone.add(lists.get(number-1));
-        lists.remove(number-1);
+    public void remove(int taskIndex){
 
+        tasksDone.add(tasks.get(taskIndex));
+        tasks.remove(taskIndex);
     }
 
-    public int listSize(){
-        return lists.size();
+
+    public int taskSize(){
+        return tasks.size();
     }
 
-    public int listDoneSize(){
-        return listDone.size();
-    }*/
+    public int taskDoneSize(){
+        return tasksDone.size();
+    }
 }
+
