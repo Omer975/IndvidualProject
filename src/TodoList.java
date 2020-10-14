@@ -18,21 +18,50 @@ public class TodoList {
     }
 
     public void print(){
+        int count = 0;
         for (Task list: tasks){
             System.out.println("__________________________________________");
+            System.out.println("Task ID:        " + (count + 1));
             System.out.println("Task Title:     " + list.getTaskTitle());
             System.out.println("Project Name:   " + list.getProjectName());
             System.out.println("Task Date:      " + list.getTaskDate());
             System.out.println("Task Status:    " + list.getStatus());
             System.out.println("__________________________________________");
+            count++;
 
         }
     }
 
+    public void printSortbyDate(){
+        Collections.sort(tasks, new DateCompare());
+        print();
+    }
+
+    public void printSortbyProject(){
+        Collections.sort(tasks, new ProjectCompare());
+        print();
+    }
+
+    public void edit(int taskIndex){
+        if (tasks.size() == 0){
+            System.out.println("No information in ToDoList");
+        }
+        if (taskIndex-1 >= tasks.size()){
+            System.out.println("No such as ID");
+        }
+
+    }
+
+
+
+
+
+
+
     public void remove(int taskIndex){
 
-        tasksDone.add(tasks.get(taskIndex));
-        tasks.remove(taskIndex);
+        tasksDone.add(tasks.get(taskIndex-1));
+        tasks.remove(taskIndex-1);
     }
 
 
@@ -43,5 +72,7 @@ public class TodoList {
     public int taskDoneSize(){
         return tasksDone.size();
     }
+
+
 }
 
