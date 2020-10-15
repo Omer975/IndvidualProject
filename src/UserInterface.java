@@ -64,7 +64,7 @@ public class UserInterface {
                     String title = scanner.nextLine();
                     System.out.print("Project Name: ");
                     String project = scanner.nextLine();
-                    System.out.print("Task Date: ");
+                    System.out.print("Task Date(yyyy-MM-dd): ");
                     Scanner scan = new Scanner(System.in);
                     Date d = null;
                     try{
@@ -79,15 +79,61 @@ public class UserInterface {
                     break;
 
                 case "3":
-                    System.out.print("Enter Task ID for Edit: ");
-                    int toEdit = scanner.nextInt();
+
                     System.out.println("Please Enter Your Choise: ");
                     System.out.println("1-Update Task Title: ");
                     System.out.println("2-Update Project: ");
                     System.out.println("3-Update Task Date: ");
                     System.out.println("4-Update Task Status: ");
                     System.out.print("Your Option: ");
-                    //String commandEdit = scanner.nextLine();
+
+                    String commandEdit = scanner.nextLine();
+
+                    if (commandEdit.equals("1")){
+                        System.out.print("Enter Task Title: ");
+                        String taskTitle = scanner.nextLine();
+                        System.out.print("Enter New Task Title: ");
+                        String newTaskTitle = scanner.nextLine();
+                        this.todoList.editTaskTitle(taskTitle, newTaskTitle);
+                        System.out.println("Your task title is changed ");
+                    }
+
+                    else if (commandEdit.equals("2")){
+                        System.out.print("Enter Project Name: ");
+                        String projectName = scanner.nextLine();
+                        System.out.print("Enter New Project Name: ");
+                        String newProjectName = scanner.nextLine();
+                        this.todoList.editProjectName(projectName, newProjectName);
+                        System.out.println("Your project name is changed ");
+                    }
+
+                    else if (commandEdit.equals("3")){
+                        System.out.print("Enter Project Name: ");
+                        String projectName = scanner.nextLine();
+                        System.out.print("Enter New Date for Project(yyyy-MM-dd): ");
+                        Scanner sc = new Scanner(System.in);
+                        Date dNew = null;
+                        try{
+                            dNew = new SimpleDateFormat("yyyy-MM-dd").parse(sc.nextLine());
+                        }catch (ParseException e){
+                            e.printStackTrace();
+                        }
+                        this.todoList.editProjectDate(projectName, dNew);
+                        System.out.println("Your project date is changed ");
+                    }
+
+                    else if (commandEdit.equals("4")){
+                        System.out.print("Enter Project Name: ");
+                        String projectName = scanner.nextLine();
+                        System.out.print("Enter Stratus: ");
+                        String newStatus = scanner.nextLine();
+                        this.todoList.editStatus(projectName, newStatus);
+                        System.out.println("Your project status is changed ");
+                    }
+                    else {
+                        System.out.println("Wrong Input");
+                    }
+
 
                     break;
 
@@ -109,6 +155,8 @@ public class UserInterface {
                         break;
                     }
                     break;
+                default:
+                    System.out.println("Wrong Input");
             }
         }
     }

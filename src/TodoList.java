@@ -42,28 +42,35 @@ public class TodoList {
         print();
     }
 
-    public void edit(int taskIndex){
-        if (tasks.size() == 0){
-            System.out.println("No information in ToDoList");
-        }
-        if (taskIndex-1 >= tasks.size()){
-            System.out.println("No such as ID");
-        }
-
+    public void editTaskTitle(String taskTitle, String newTaskTitle){
+        tasks.stream()
+                .filter(x -> x.getTaskTitle().equals(taskTitle))
+                .forEach(x -> x.setTaskTitle(newTaskTitle));
     }
 
+    public void editProjectName(String projectName, String newProjectName){
+        tasks.stream()
+                .filter(x -> x.getProjectName().equals(projectName))
+                .forEach(x -> x.setProjectName(newProjectName));
+    }
 
+    public void editProjectDate(String projectName, Date dNew){
+        tasks.stream()
+                .filter(x -> x.getProjectName().equals(projectName))
+                .forEach(x -> x.setTaskDate(dNew));
+    }
 
-
-
-
+    public void editStatus(String projectName, String newStatus){
+        tasks.stream()
+                .filter(x -> x.getProjectName().equals(projectName))
+                .forEach(x -> x.setStatus(newStatus));
+    }
 
     public void remove(int taskIndex){
 
         tasksDone.add(tasks.get(taskIndex-1));
         tasks.remove(taskIndex-1);
     }
-
 
     public int taskSize(){
         return tasks.size();
@@ -72,7 +79,5 @@ public class TodoList {
     public int taskDoneSize(){
         return tasksDone.size();
     }
-
-
 }
 
