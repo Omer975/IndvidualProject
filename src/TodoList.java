@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.text.DateFormat;
@@ -30,6 +31,18 @@ public class TodoList {
             count++;
 
         }
+    }
+
+
+    public void printListinFile() throws IOException {
+        FileManagement.readFile("output.txt");
+        print();
+
+    }
+
+
+    public ArrayList<Task> getListofTasks(){
+        return tasks;
     }
 
     public void printSortbyDate(){
