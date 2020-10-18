@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a6ee8fa7-171f-419a-8d04-a21375a85e67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDo_List.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/CLS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/DateCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/DateFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/FileManagement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/ProjectCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/TodoList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/UserInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CLS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DateCompare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DateFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileManagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCompare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j3XSTCMOFfqSseVzv3Tu2JXcju" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6ee8fa7-171f-419a-8d04-a21375a85e67" name="Default Changelist" comment="" />
+      <created>1603033751935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603033751935</updated>
+    </task>
+    <servers />
+  </component>
+</project>
