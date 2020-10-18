@@ -1,3 +1,4 @@
+import java.nio.file.Paths;
 import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class UserInterface {
         this.scanner = scanner;
     }
 
-    public void start(){
+    public void start() throws IOException {
         while(true){
             System.out.println();
             System.out.println("Welcome to ToDoList");
@@ -33,12 +34,16 @@ public class UserInterface {
 
             switch (command){
                 case "1":
+                    //todoList.printListinFile();
+
+
                     if (this.todoList.taskSize() == 0) {
                         System.out.println("********************************");
                         System.out.println("You don't have any task for ToDo");
                         System.out.println("********************************");
                         System.out.println();
                     }else{
+
                         System.out.println("Please Enter Your Choise: ");
                         System.out.println("1-List: ");
                         System.out.println("2-Sort by Date: ");
@@ -151,6 +156,7 @@ public class UserInterface {
                     System.out.println("Do you want to save and quit?Y/N");
                     String answer = scanner.nextLine();
                     if (answer.equals("Y")) {
+                        FileManagement.saveList(todoList.getListofTasks());
                         System.out.println("Have a Nice Day...");
                         break;
                     }
