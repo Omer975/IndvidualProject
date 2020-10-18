@@ -1,3 +1,2 @@
-r;t;Tue Oct 20 00:00:00 CEST 2020;rr
-ddgd;dgd;Thu Oct 22 00:00:00 CEST 2020;ddd
-ddg;dgd;Fri Nov 20 00:00:00 CET 2020;fff
+rty;y;2020-10-20;tyu
+rty;yyy;2020-10-20;trr

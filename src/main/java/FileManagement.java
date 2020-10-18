@@ -1,5 +1,6 @@
 import java.io.*;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -20,7 +21,7 @@ public class FileManagement {
         FileWriter writer = new  FileWriter(FILEPATH);
         for (Task task : tasks) {
             try {
-                writer.write(task.getTaskTitle() + ";" + task.getProjectName() + ";" + task.getTaskDate() + ";" + task.getStatus() +"\n");
+                writer.write(task.getTaskTitle() + ";" + task.getProjectName() + ";" + new SimpleDateFormat("yyyy-MM-dd").format(task.getTaskDate()) + ";" + task.getStatus() +"\n");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -29,7 +30,7 @@ public class FileManagement {
 
     }
 
-    public static void readFile(String FILEPATH) throws IOException {
+    public static ArrayList<Task> readFile(String FILEPATH) throws IOException {
         ArrayList<Task> tasks = new ArrayList<>();
 
         try (Scanner inp = new Scanner(Paths.get(FILEPATH))) {
@@ -44,5 +45,7 @@ public class FileManagement {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        return tasks;
+
     }
 }

@@ -34,7 +34,7 @@ public class UserInterface {
 
             switch (command){
                 case "1":
-                    //todoList.printListinFile();
+                    todoList.printListinFile();
 
 
                     if (this.todoList.taskSize() == 0) {
@@ -43,6 +43,9 @@ public class UserInterface {
                         System.out.println("********************************");
                         System.out.println();
                     }else{
+
+                        System.out.print("\033[H\033[2J");
+                        System.out.flush();
 
                         System.out.println("Please Enter Your Choise: ");
                         System.out.println("1-List: ");
