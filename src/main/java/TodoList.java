@@ -35,7 +35,7 @@ public class TodoList {
 
 
     public void printListinFile() throws IOException {
-        FileManagement.readFile("output.txt");
+        tasks = FileManagement.readFile("output.txt");
         print();
 
     }

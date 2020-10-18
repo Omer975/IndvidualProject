@@ -3,31 +3,36 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a6ee8fa7-171f-419a-8d04-a21375a85e67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDo_List.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/CLS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/DateCompare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/DateFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/FileManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/ProjectCompare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/TodoList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ToDo_List/UserInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CLS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DateCompare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DateFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCompare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CLS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TodoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +44,37 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ToDo_List" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ToDo_List" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ToDo_List" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,6 +85,44 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ToDo_List.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToDo_List [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ToDo_List [jar]" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,5 +134,54 @@
       <updated>1603033751935</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="228" y="23" width="1024" height="828" key="#Project_Structure" timestamp="1603033825593">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="228" y="23" width="1024" height="828" key="#Project_Structure/0.23.1440.828@0.23.1440.828" timestamp="1603033825593" />
+    <state x="204" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603036355986">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="204" y="110" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.829@0.23.1440.829" timestamp="1603036355986" />
+    <state width="1358" height="489" key="GridCell.Tab.0.bottom" timestamp="1603037207318">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1358" height="489" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1603037207318" />
+    <state width="1358" height="386" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1603035118256" />
+    <state width="1358" height="492" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1603036837608" />
+    <state width="1358" height="386" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1603035563587" />
+    <state width="1358" height="489" key="GridCell.Tab.0.center" timestamp="1603037207317">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1358" height="489" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1603037207317" />
+    <state width="1358" height="386" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1603035118255" />
+    <state width="1358" height="492" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1603036837607" />
+    <state width="1358" height="386" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1603035563586" />
+    <state width="1358" height="489" key="GridCell.Tab.0.left" timestamp="1603037207317">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1358" height="489" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1603037207317" />
+    <state width="1358" height="386" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1603035118255" />
+    <state width="1358" height="492" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1603036837607" />
+    <state width="1358" height="386" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1603035563586" />
+    <state width="1358" height="489" key="GridCell.Tab.0.right" timestamp="1603037207317">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state width="1358" height="489" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1603037207317" />
+    <state width="1358" height="386" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1603035118256" />
+    <state width="1358" height="492" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1603036837608" />
+    <state width="1358" height="386" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1603035563587" />
   </component>
 </project>
