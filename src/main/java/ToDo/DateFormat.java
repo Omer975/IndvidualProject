@@ -1,3 +1,5 @@
+package ToDo;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,13 +11,10 @@ class DateFormat{
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
         try {
-
             date = formatter.parse(dateValue);
-
         } catch (ParseException e) {
             e.printStackTrace();
         }
         return date;
     }
-
 }
