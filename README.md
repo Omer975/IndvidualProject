@@ -1,6 +1,6 @@
 # Individual Project
 
-This ToDo List project is an individual project conducted within the scope of training conducted by SDA, KTU and Novare Potential.
+This ToDo List project is an individual project conducted within the scope of training conducted by Software Development Academy (SDA), KTU and Novare Potential.
 
 # Project Title: 
 ToDo List
