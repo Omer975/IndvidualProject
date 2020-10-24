@@ -1,5 +1,13 @@
-import java.nio.file.Paths;
-import java.sql.SQLOutput;
+/**
+ * The part that will run and will appear on the screen when the program is run.
+ * Gives options to the user the action to be performed on ToDoList
+ */
+
+package ToDo;
+
+import ToDo.FileManagement;
+import ToDo.TodoList;
+
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.*;
@@ -16,8 +24,13 @@ public class UserInterface {
         this.scanner = scanner;
     }
 
+    /**
+     * Main menu for ToDo List
+     * @throws IOException
+     */
     public void start() throws IOException {
-        while(true){
+        boolean control = true;
+        while(control){
             System.out.println();
             System.out.println("Welcome to ToDoList");
             System.out.println("You have "+ this.todoList.taskSize() + " tasks todo and " + this.todoList.taskDoneSize()+ " tasks are done!");
@@ -32,11 +45,20 @@ public class UserInterface {
             System.out.print("Your Option: ");
             String command = scanner.nextLine();
 
+            /**
+             * The task part to be done according to the option to be selected
+             */
             switch (command){
                 case "1":
+
+                    /**
+                     * Reads the tasks from file if file have any tasks
+                     */
                     todoList.printListinFile();
 
-
+                    /**
+                     * If don't have any task will show this message
+                     */
                     if (this.todoList.taskSize() == 0) {
                         System.out.println("********************************");
                         System.out.println("You don't have any task for ToDo");
@@ -44,9 +66,15 @@ public class UserInterface {
                         System.out.println();
                     }else{
 
+                        /**
+                         * For clear screen but in IntelliJ doesn't work
+                         */
                         System.out.print("\033[H\033[2J");
                         System.out.flush();
 
+                        /**
+                         * Displays the list options if there are any tasks for to do
+                         */
                         System.out.println("Please Enter Your Choise: ");
                         System.out.println("1-List: ");
                         System.out.println("2-Sort by Date: ");
@@ -66,6 +94,9 @@ public class UserInterface {
                     }
                     break;
 
+                /**
+                 * Add new task to ToDo List
+                 */
                 case "2":
                     System.out.println("Enter Your ToDoList Informations:");
                     System.out.print("Task Title: ");
@@ -86,6 +117,9 @@ public class UserInterface {
 
                     break;
 
+                /**
+                 * Edit the ToDo List
+                  */
                 case "3":
 
                     System.out.println("Please Enter Your Choise: ");
@@ -142,9 +176,11 @@ public class UserInterface {
                         System.out.println("Wrong Input");
                     }
 
-
                     break;
 
+                /**
+                 * Removing the task by Index number from the list
+                  */
                 case "4":
                     System.out.print("Enter Task ID for Remove: ");
                     int toRemove = scanner.nextInt();
@@ -152,20 +188,24 @@ public class UserInterface {
                     this.todoList.remove(toRemove);
                     System.out.println("Your " + toRemove + "  id task is removed...");
                     System.out.println();
-
                     break;
 
+                /**
+                 * Save the list to the file and quit from the ToDo List application
+                 */
                 case "5":
-                    System.out.println("Do you want to save and quit?Y/N");
+                    System.out.print("Do you want to save and quit?Y/N: ");
                     String answer = scanner.nextLine();
                     if (answer.equals("Y")) {
                         FileManagement.saveList(todoList.getListofTasks());
-                        System.out.println("Have a Nice Day...");
+                        System.out.println("Your files succesfuly saved to the file. Have a Nice Day...");
+                        control = false;
                         break;
                     }
                     break;
                 default:
                     System.out.println("Wrong Input");
+                    break;
             }
         }
     }

@@ -1,3 +1,9 @@
+/**
+ * Comparing the tasks by date
+ */
+
+package ToDo;
+
 import java.util.Comparator;
 
 public class DateCompare implements Comparator<Task>{

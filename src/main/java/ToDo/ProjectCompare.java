@@ -1,3 +1,7 @@
+/**
+ * Comparing the tasks by project name
+ */
+package ToDo;
 
 import java.util.Comparator;
 
